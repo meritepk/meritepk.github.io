@@ -5,6 +5,8 @@
     $locationProvider.hashPrefix('!');
     $routeProvider.when('/', {
       templateUrl : 'main.html'
+    }).when('/quotation', {
+      templateUrl : 'app/sales/quotation.html'
     }).otherwise('/');
   }
 
