@@ -17,8 +17,10 @@
   .run(function($http, $rootScope) {
     $rootScope.user = {
       'menu' : [ {
-        'title' : 'Quotation',
-        'url' : '#!/quotation'
+        // 'title' : 'Quotation',
+        // 'url' : '#!/quotation'
+        'title' : 'Home',
+        'url' : ''
       } ]
     };
   });
