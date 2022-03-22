@@ -1,61 +1,727 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>merite.pk</title>
-
-  <link rel="icon" type="image/png" href="app/img/favicon.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="app/img/apple-icon.png">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-
-  <link href="lib/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="lib/material-kit/1.1.0/assets/css/material-kit.css" rel="stylesheet" />
-  <link href="app/css/webapp.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>merite-good-reads</title>
 </head>
 
-<body ng-app="WebApp">
-
-  <nav class="navbar navbar-info">
+<body class="font-monospace lh-1">
     <div class="container">
-      <a class="navbar-brand" href="#"><img alt="merite.pk" src="app/img/logo.png" width="160" height="37"></a>
-      <div class="dropdown pull-right navbar-btn">
-        <a href="" class="dropdown-toggle" data-toggle="dropdown">
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-        </a>
-        <ul class="dropdown-menu">
-          <li ng-repeat="item in user.menu track by $index"><a ng-href="{{item.url}}">{{item.title}}</a></li>
-        </ul>
-      </div>
+        <div>
+            <h4 id="2022-03-23"><a href="#2022-03-23" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-23 :: JVM in Linux containers, surviving the isolation</h4>
+            <a target="_blank"
+                href="https://bell-sw.com/announcements/2020/10/28/JVM-in-Linux-containers-surviving-the-isolation/">
+                https://bell-sw.com/announcements/2020/10/28/JVM-in-Linux-containers-surviving-the-isolation/</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://bell-sw.com/assets/images/2020-10-28-JVM-in-Linux-containers-surviving-the-isolation/bellsoft_jfr_part4-min.jpg">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-03-18"><a href="#2022-03-18" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-18 :: Install/Run Docker on Windows 10</h4>
+            <dl>
+                <dt>1. Start Windows PowerShell via Run as administrator</dt>
+                <dd></dd>
+                <dt>2. Execute below commands one by one</dt>
+                <dd></dd>
+                <dd>&nbsp;&nbsp;&gt; wsl --install</dd>
+                <dd>&nbsp;&nbsp;&gt; wsl --set-default-version 2</dd>
+                <dd>&nbsp;&nbsp;&gt; wsl --update</dd>
+                <dt>3. Start Microsoft Store and install Debian</dt>
+                <dd></dd>
+                <dt>4. Start Debian and create user dockerce/dockerce</dt>
+                <dd></dd>
+                <dt>5. Execute below commands one by one</dt>
+                <dd></dd>
+                <dd>&nbsp;&nbsp;$ sudo apt update</dd>
+                <dd>&nbsp;&nbsp;$ sudo apt dist-upgrade</dd>
+                <dd>&nbsp;&nbsp;$ sudo apt install docker.io</dd>
+                <dd>&nbsp;&nbsp;$ sudo touch /etc/fstab</dd>
+                <dd>&nbsp;&nbsp;$ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy</dd>
+                <dd>&nbsp;&nbsp;$ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy</dd>
+                <dd>&nbsp;&nbsp;$ sudo service docker start</dd>
+                <dt>6. Test installation by running hello-world docker image</dt>
+                <dd></dd>
+                <dd>&nbsp;&nbsp;$ sudo docker run hello-world</dd>
+            </dl>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-03-15"><a href="#2022-03-15" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-15 :: Refactoring</h4>
+            <a target="_blank" href="https://refactoring.guru/refactoring">https://refactoring.guru/refactoring</a>
+            <div>&nbsp;</div>
+            <p><em><strong>Refactoring</strong></em> is a systematic process of improving code without creating new
+                functionality that can transform a mess into clean code and simple design.</p>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-03-15_01"><a href="#2022-03-15_01" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-15 :: Design Patterns</h4>
+            <a target="_blank"
+                href="https://refactoring.guru/design-patterns/">https://refactoring.guru/design-patterns</a>
+            <div>&nbsp;</div>
+            <p><em><strong>Design patterns</strong></em> are typical solutions to common problems in software design.
+                Each pattern is like a blueprint that you can customize to solve a particular design problem in your
+                code.</p>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-03-07"><a href="#2022-03-07" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-07 :: Awesome Software Architecture</h4>
+            <a target="_blank" href="https://awesome-architecture.com/">https://awesome-architecture.com/</a>
+            <div>&nbsp;</div>
+            <p>Curated list of awesome articles and resources to learn and practice about <em><strong>software
+                        architecture</strong></em>, <em><strong>patterns</strong></em> and principles. this repository
+                will be updated continuously, keep yourself up to date.</p>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-03-07_01"><a href="#2022-03-07_01" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-07 :: Encoding, Encryption, and Hashing</h4>
+            <a target="_blank" href="https://auth0.com/blog/encoding-encryption-hashing/">
+                https://auth0.com/blog/encoding-encryption-hashing/</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://images.ctfassets.net/23aumh6u8s0i/32RHwyEORRBB8sbu5EZgdz/e706f821fe5e309fc410d7a56acee7d3/encoding-encryption-hasing-cheat-sheet.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-03-04"><a href="#2022-03-04" style="text-decoration: none;">&#x1F516;</a>
+                2022-03-04 :: The 2022 Java Programmer RoadMap [UPDATED]</h4>
+            <a target="_blank" href="https://medium.com/javarevisited/the-java-programmer-roadmap-f9db163ef2c2">
+                https://medium.com/javarevisited/the-java-programmer-roadmap-f9db163ef2c2</a>
+            <div>&nbsp;</div>
+            <img width="500" src="https://miro.medium.com/max/1400/1*dAQJ-UDP3altoQKThbQs_w.jpeg">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2022-01-07"><a href="#2022-01-07" style="text-decoration: none;">&#x1F516;</a>
+                2022-01-07 :: Hibernate Performance Tuning Tips – 2022 Edition</h4>
+            <a target="_blank" href="https://thorben-janssen.com/tips-to-boost-your-hibernate-performance/">
+                https://thorben-janssen.com/tips-to-boost-your-hibernate-performance/</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://thorben-janssen.com/wp-content/uploads/2015/11/Hibernate-Performance-Tuning-in-2022-768x427.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-12-20"><a href="#2021-12-20" style="text-decoration: none;">&#x1F516;</a>
+                2021-12-20 :: Performance Testing with JMeter</h4>
+            <a target="_blank" href="https://blog.scottlogic.com/2021/12/09/Performance-Testing-with-JMeter.html">
+                https://blog.scottlogic.com/2021/12/09/Performance-Testing-with-JMeter.html</a>
+            <div>&nbsp;</div>
+            <img width="500" src="https://blog.scottlogic.com/bquinn/assets/jmeter.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-12-17"><a href="#2021-12-17" style="text-decoration: none;">&#x1F516;</a>
+                2021-12-17 :: The Best Spring Data JPA Logging Configuration in Spring Boot</h4>
+            <a target="_blank" href="https://thorben-janssen.com/spring-data-jpa-logging/">
+                https://thorben-janssen.com/spring-data-jpa-logging/</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://thorben-janssen.com/wp-content/uploads/2021/12/Spring-Data-JPA-Best-Logging-Configuration-768x427.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-12-06"><a href="#2021-12-06" style="text-decoration: none;">&#x1F516;</a>
+                2021-12-06 :: SIMPLE THINGS THAT ARE ACTUALLY HARD: USER AUTHENTICATION</h4>
+            <a target="_blank"
+                href="https://techblog.bozho.net/simple-things-that-are-actually-hard-user-authentication/">
+                https://techblog.bozho.net/simple-things-that-are-actually-hard-user-authentication/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-11-17"><a href="#2021-11-17" style="text-decoration: none;">&#x1F516;</a>
+                2021-11-17 :: 5 Git Best Practices</h4>
+            <a target="_blank" href="https://levelup.gitconnected.com/5-git-best-practices-5617fcaada05">
+                https://levelup.gitconnected.com/5-git-best-practices-5617fcaada05</a>
+            <div>&nbsp;</div>
+            <img width="500" src="https://miro.medium.com/max/1400/1*j2dCG0Z99atFxKxOmQhsIg.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-11-15"><a href="#2021-11-15" style="text-decoration: none;">&#x1F516;</a>
+                2021-11-15 :: Spring Boot Microservices Coding Style Guidelines and Best Practices</h4>
+            <a target="_blank"
+                href="https://medium.com/codex/spring-boot-microservices-coding-style-guidelines-and-best-practices-1dec229161c8">
+                https://medium.com/codex/spring-boot-microservices-coding-style-guidelines-and-best-practices-1dec229161c8</a
+                target="_blank">
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-11-04"><a href="#2021-11-04" style="text-decoration: none;">&#x1F516;</a>
+                2021-11-04 :: A Guide to Spring's Open Session In View</h4>
+            <a target="_blank" href="https://www.baeldung.com/spring-open-session-in-view#1-spring-boot">
+                https://www.baeldung.com/spring-open-session-in-view#1-spring-boot</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-10-28"><a href="#2021-10-28" style="text-decoration: none;">&#x1F516;</a>
+                2021-10-28 :: The Missing README: A Guide for the New Software Engineer</h4>
+            <a target="_blank" href="https://nurkiewicz.com/2021/10/the-missing-readme-book-review.html">
+                https://nurkiewicz.com/2021/10/the-missing-readme-book-review.html</a>
+            <div>&nbsp;</div>
+            <p>Do you remember the definition of a software developer? "You create value by solving problems with
+                code". This is how you make an impact, by solving problems. Too often I find myself coding to solve
+                imaginary problems, creating no value. Don't be like me ...</p>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-10-22"><a href="#2021-10-22" style="text-decoration: none;">&#x1F516;</a>
+                2021-10-22 :: Top Java Development Skills in Demand Right Now</h4>
+            <a target="_blank"
+                href="https://medium.com/javarevisited/top-java-development-skills-in-demand-right-now-1b3f713f26cc">
+                https://medium.com/javarevisited/top-java-development-skills-in-demand-right-now-1b3f713f26cc</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-10-21"><a href="#2021-10-21" style="text-decoration: none;">&#x1F516;</a>
+                2021-10-21 :: OWASP Secure Coding Practices-Quick Reference Guide</h4>
+            <a target="_blank"
+                href="https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated_content">
+                https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated_content</a>
+            <br />
+            <a target="_blank" href="https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf">
+                https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-10-16"><a href="#2021-10-16" style="text-decoration: none;">&#x1F516;</a>
+                2021-10-16 :: The Five Whys Analysis</h4>
+            <a target="_blank" href="https://serce.me/posts/14-10-2021-the-five-lies-analysis/">
+                https://serce.me/posts/14-10-2021-the-five-lies-analysis/</a>
+            <div>&nbsp;</div>
+            <p><em><strong>The Five Whys Analysis</strong></em> is a popular root cause investigation technique with a
+                simple premise that is asking why five times can yield the answer, which is the root cause. While doing
+                so could be a helpful exercise, blindly applying the technique often leads to a suboptimal result...
+            </p>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-10-15"><a href="#2021-10-15" style="text-decoration: none;">&#x1F516;</a>
+                2021-10-15 :: Awesome Java</h4>
+            <a target="_blank" href="https://github.com/akullpp/awesome-java">
+                https://github.com/akullpp/awesome-java</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-10-11"><a href="#2021-10-11" style="text-decoration: none;">&#x1F516;</a>
+                2021-10-11 :: Profiling and Fixing Common Performance Bottlenecks</h4>
+            <a target="_blank" href="https://ecoapm.github.io/presentations/JB2021/">
+                https://ecoapm.github.io/presentations/JB2021/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-09-29"><a href="#2021-09-29" style="text-decoration: none;">&#x1F516;</a>
+                2021-09-29 :: Spring @Transactional Mistakes Everyone Makes</h4>
+            <a target="_blank" href="https://dzone.com/articles/most-common-spring-transactional-mistakes">
+                https://dzone.com/articles/most-common-spring-transactional-mistakes</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-09-27"><a href="#2021-09-27" style="text-decoration: none;">&#x1F516;</a>
+                2021-09-27 :: 6 Tips To Start Coding Faster and Better</h4>
+            <a target="_blank"
+                href="https://medium.com/javarevisited/6-tips-to-start-coding-faster-and-better-e152ec17f41">
+                https://medium.com/javarevisited/6-tips-to-start-coding-faster-and-better-e152ec17f41</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-08-25"><a href="#2021-08-25" style="text-decoration: none;">&#x1F516;</a>
+                2021-08-25 :: Migrate to JUnit 5 from JUnit 4</h4>
+            <a target="_blank" href="https://docs.openrewrite.org/tutorials/migrate-from-junit-4-to-junit-5">
+                https://docs.openrewrite.org/tutorials/migrate-from-junit-4-to-junit-5</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-08-24"><a href="#2021-08-24" style="text-decoration: none;">&#x1F516;</a>
+                2021-08-24 :: 5 Hibernate Features You Should Use With Spring Data JPA</h4>
+            <a target="_blank" href="https://thorben-janssen.com/hibernate-features-with-spring-data-jpa/">
+                https://thorben-janssen.com/hibernate-features-with-spring-data-jpa/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-08-24"><a href="#2021-08-24" style="text-decoration: none;">&#x1F516;</a>
+                2021-08-24 :: 5 Hibernate Features You Should Use With Spring Data JPA</h4>
+            <a target="_blank" href="https://thorben-janssen.com/hibernate-features-with-spring-data-jpa/">
+                https://thorben-janssen.com/hibernate-features-with-spring-data-jpa/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-07-29"><a href="#2021-07-29" style="text-decoration: none;">&#x1F516;</a>
+                2021-07-29 :: The Programmer's Oath (18 November 2015)</h4>
+            <a target="_blank" href="https://blog.cleancoder.com/uncle-bob/2015/11/18/TheProgrammersOath.html">
+                https://blog.cleancoder.com/uncle-bob/2015/11/18/TheProgrammersOath.html</a>
+            <div>&nbsp;</div>
+            <strong>
+                <p>In order to defend and preserve the honor of the profession of computer programmers, </p>
+                <p><em>I Promise that, to the best of my ability and judgement</em>:</p>
+            </strong>
+            <ol>
+                <li>
+                    <p>I will not produce harmful code.</p>
+                </li>
+                <li>
+                    <p>The code that I produce will always be my best work. I will not knowingly allow code that is
+                        defective either in behavior or structure to accumulate.</p>
+                </li>
+                <li>
+                    <p>I will produce, with each release, a quick, sure, and repeatable proof that every element of the
+                        code works as it should.</p>
+                </li>
+                <li>
+                    <p>I will make frequent, small, releases so that I do not impede the progress of others.</p>
+                </li>
+                <li>
+                    <p>I will fearlessly and relentlessly improve my creations at every opportunity. I will never
+                        degrade them.</p>
+                </li>
+                <li>
+                    <p>I will do all that I can to keep the productivity of myself, and others, as high as possible. I
+                        will do nothing that decreases that productivity.</p>
+                </li>
+                <li>
+                    <p>I will continuously ensure that others can cover for me, and that I can cover for them.</p>
+                </li>
+                <li>
+                    <p>I will produce estimates that are honest both in magnitude and precision. I will not make
+                        promises without certainty.</p>
+                </li>
+                <li>
+                    <p>I will never stop learning and improving my craft.</p>
+                </li>
+            </ol>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-02-24"><a href="#2021-02-24" style="text-decoration: none;">&#x1F516;</a>
+                2021-02-24 :: From Monolith to Microservices – Migrating a Persistence Layer</h4>
+            <a target="_blank" href="https://thorben-janssen.com/monolith-to-microservices-persistence-layer/">
+                https://thorben-janssen.com/monolith-to-microservices-persistence-layer/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-01-22"><a href="#2021-01-22" style="text-decoration: none;">&#x1F516;</a>
+                2021-01-22 :: What is end-to-end encryption and why it's such a confusing term</h4>
+            <a target="_blank"
+                href="https://advancedweb.hu/what-is-end-to-end-encryption-and-why-its-such-a-confusing-term/">
+                https://advancedweb.hu/what-is-end-to-end-encryption-and-why-its-such-a-confusing-term/</a>
+            <div>&nbsp;</div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" height="211" preserveAspectRatio=""
+                    style="width:630px;height:211px" viewBox="0 0 630 211" width="630">
+                    <defs>
+                        <filter height="300%" id="prefix__a" width="300%" x="-1" y="-1">
+                            <feGaussianBlur result="blurOut" stdDeviation="2"></feGaussianBlur>
+                            <feColorMatrix in="blurOut" result="blurOut2"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
+                            <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"></feOffset>
+                            <feBlend in="SourceGraphic" in2="blurOut3"></feBlend>
+                        </filter>
+                    </defs>
+                    <ellipse cx="34" cy="103.5" fill="#FEFECE" filter="url(#prefix__a)" rx="8" ry="8" stroke="#A80036"
+                        stroke-width="1.5"></ellipse>
+                    <path d="M34 111.5v27m-13-19h26m-13 19l-13 15m13-15l13 15" fill="none" filter="url(#prefix__a)"
+                        stroke="#A80036" stroke-width="1.5"></path><text font-family="sans-serif" font-size="14"
+                        lengthAdjust="spacingAndGlyphs" textLength="56" x="6" y="171.995">browser</text>
+                    <path fill="#90EE90" filter="url(#prefix__a)" d="M153.5 116.5H246.5V152.797H153.5z" stroke="#A80036"
+                        stroke-width="1.5"></path><text font-family="sans-serif" font-size="14"
+                        lengthAdjust="spacingAndGlyphs" textLength="73" x="163.5" y="139.495">WiFi router</text>
+                    <path fill="#90EE90" filter="url(#prefix__a)" d="M293.5 116.5H334.5V152.797H293.5z" stroke="#A80036"
+                        stroke-width="1.5"></path><text font-family="sans-serif" font-size="14"
+                        lengthAdjust="spacingAndGlyphs" textLength="21" x="303.5" y="139.495">ISP</text>
+                    <path fill="#90EE90" filter="url(#prefix__a)" d="M381.5 116.5H470.5V152.797H381.5z" stroke="#A80036"
+                        stroke-width="1.5"></path><text font-family="sans-serif" font-size="14"
+                        lengthAdjust="spacingAndGlyphs" textLength="69" x="391.5" y="139.495">backbone</text>
+                    <path fill="#FEFECE" filter="url(#prefix__a)" d="M517 116.5H619V152.797H517z" stroke="#A80036"
+                        stroke-width="1.5"></path><text font-family="sans-serif" font-size="14"
+                        lengthAdjust="spacingAndGlyphs" textLength="82" x="527" y="139.495">google.com</text>
+                    <path d="M84 8v25.133h112l4 83.227 4-83.227h112V18L306 8H84" fill="#FBFB77" filter="url(#prefix__a)"
+                        stroke="#A80036" stroke-width="1.0"></path>
+                    <path d="M306 8v10h10L306 8" fill="#FBFB77" stroke="#A80036" stroke-width="1.0"></path><text
+                        font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="211" x="90"
+                        y="25.067">Can not read the communication</text>
+                    <path d="M62.16 134.5h86.07" fill="none" stroke="#A80036" stroke-width="1.0"></path>
+                    <path fill="#A80036" d="M153.47 134.5L144.47 130.5 148.47 134.5 144.47 138.5 153.47 134.5z"
+                        stroke="#A80036" stroke-width="1.0"></path>
+                    <path
+                        d="M87.208 118.716a2.71 2.71 0 0 0-2.708 2.709c0 .173.036.321.068.474l-3.318 3.318v2.167h3.25v-2.167h2.167v-1.083l.068-.068c.152.032.3.068.474.068a2.71 2.71 0 0 0 0-5.417m.542 1.084c.596 0 1.083.487 1.083 1.083s-.487 1.083-1.083 1.083a1.087 1.087 0 0 1-1.083-1.083c0-.596.487-1.083 1.083-1.083">
+                    </path><text font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="41"
+                        x="94.917" y="127.567">HTTPS</text>
+                    <path d="M246.7 134.5h41.57" fill="none" stroke="#A80036" stroke-width="1.0"></path>
+                    <path fill="#A80036" d="M293.35 134.5L284.35 130.5 288.35 134.5 284.35 138.5 293.35 134.5z"
+                        stroke="#A80036" stroke-width="1.0"></path>
+                    <path
+                        d="M271.958 122.5a2.71 2.71 0 0 0-2.708 2.708c0 .174.036.322.068.475L266 129v2.167h3.25V129h2.167v-1.083l.068-.069c.152.033.3.069.474.069a2.71 2.71 0 0 0 0-5.417m.542 1.083c.596 0 1.083.488 1.083 1.084 0 .596-.487 1.083-1.083 1.083a1.087 1.087 0 0 1-1.083-1.083c0-.596.487-1.084 1.083-1.084">
+                    </path>
+                    <path d="M334.54 134.5h41.55" fill="none" stroke="#A80036" stroke-width="1.0"></path>
+                    <path fill="#A80036" d="M381.45 134.5L372.45 130.5 376.45 134.5 372.45 138.5 381.45 134.5z"
+                        stroke="#A80036" stroke-width="1.0"></path>
+                    <path
+                        d="M359.958 122.5a2.71 2.71 0 0 0-2.708 2.708c0 .174.036.322.068.475L354 129v2.167h3.25V129h2.167v-1.083l.068-.069c.152.033.3.069.474.069a2.71 2.71 0 0 0 0-5.417m.542 1.083c.596 0 1.083.488 1.083 1.084 0 .596-.487 1.083-1.083 1.083a1.087 1.087 0 0 1-1.083-1.083c0-.596.487-1.084 1.083-1.084">
+                    </path>
+                    <path d="M470.54 134.5h41.37" fill="none" stroke="#A80036" stroke-width="1.0"></path>
+                    <path fill="#A80036" d="M516.93 134.5L507.93 130.5 511.93 134.5 507.93 138.5 516.93 134.5z"
+                        stroke="#A80036" stroke-width="1.0"></path>
+                    <path
+                        d="M495.708 122.5a2.71 2.71 0 0 0-2.708 2.708c0 .174.036.322.068.475L489.75 129v2.167H493V129h2.167v-1.083l.068-.069c.152.033.3.069.474.069a2.71 2.71 0 0 0 0-5.417m.542 1.083c.596 0 1.083.488 1.083 1.084 0 .596-.487 1.083-1.083 1.083a1.087 1.087 0 0 1-1.083-1.083c0-.596.487-1.084 1.083-1.084">
+                    </path><text font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs"
+                        textLength="180" x="228.5" y="197.995">Transport-level encryption</text>
+                </svg></div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2021-01-06"><a href="#2021-01-06" style="text-decoration: none;">&#x1F516;</a>
+                2021-01-06 :: Spring Boot Best Practices for Microservices</h4>
+            <a target="_blank"
+                href="https://piotrminkowski.com/2019/12/06/spring-boot-best-practices-for-microservices/">
+                https://piotrminkowski.com/2019/12/06/spring-boot-best-practices-for-microservices/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-10-23"><a href="#2020-10-23" style="text-decoration: none;">&#x1F516;</a>
+                2020-10-23 :: Spring Security: Delegating authorization checks to bean methods</h4>
+            <a target="_blank" href="https://www.mscharhag.com/spring/security-authorization-bean-methods">
+                https://www.mscharhag.com/spring/security-authorization-bean-methods</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-10-21"><a href="#2020-10-21" style="text-decoration: none;">&#x1F516;</a>
+                2020-10-21 :: Java Exception Handling Examples in Open Source Projects</h4>
+            <a target="_blank"
+                href="https://www.programcreek.com/2016/12/java-exception-handling-in-open-source-projects/">
+                https://www.programcreek.com/2016/12/java-exception-handling-in-open-source-projects/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-10-08"><a href="#2020-10-08" style="text-decoration: none;">&#x1F516;</a>
+                2020-10-08 :: A categorized list of all Java and JVM features since JDK 8 to 17</h4>
+            <a target="_blank"
+                href="https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-17/">
+                https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-17/</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://advancedweb.hu/assets/posts/post_java_8/jdktimeline-v5-24ee60741bb59c597eb580422334eb913b64ecef910920d9ba376bec2f8b78a9.jpg">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-09-29"><a href="#2020-09-29" style="text-decoration: none;">&#x1F516;</a>
+                2020-09-29 :: A Picture of Java in 2020</h4>
+            <a target="_blank" href="https://blog.jetbrains.com/idea/2020/09/a-picture-of-java-in-2020/">
+                https://blog.jetbrains.com/idea/2020/09/a-picture-of-java-in-2020/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-08-11"><a href="#2020-08-11" style="text-decoration: none;">&#x1F516;</a>
+                2020-08-11 :: Top 50 Java Collections Interview Questions</h4>
+            <a target="_blank" href="https://morioh.com/p/76dac2f9eaf1"> https://morioh.com/p/76dac2f9eaf1</a>
+            <div>&nbsp;</div>
+            <p>What is the Java Collection Framework and How do you choose different collections? Here is the diagram
+                which answers this question:</p>
+            <img width="500" src="https://dzone.com/storage/temp/13795568-which-java-collection-to-use.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-07-22"><a href="#2020-07-22" style="text-decoration: none;">&#x1F516;</a>
+                2020-07-22 :: How Fast is Spring?</h4>
+            <a target="_blank" href="https://spring.io/blog/2018/12/12/how-fast-is-spring">
+                https://spring.io/blog/2018/12/12/how-fast-is-spring</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQpSEfx0Y1W9aD3XVyn91-S0jtUp2DRCQSy_W_LMGyMR91YLAQ1mL7MiR1BRd8VzshvtuxzL6WAnlxf/pubchart?oid=336485057&format=image">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-07-21"><a href="#2020-07-21" style="text-decoration: none;">&#x1F516;</a>
+                2020-07-21 :: On Open Source, licenses and changes</h4>
+            <a target="_blank" href="https://blog.frankel.ch/on-opensource-licenses-changes/">
+                https://blog.frankel.ch/on-opensource-licenses-changes/</a>
+            <div>&nbsp;</div>
+            <p>What qualifies as Open Source? How to decide that what licenses are considered Open Source?</p>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-07-02"><a href="#2020-07-02" style="text-decoration: none;">&#x1F516;</a>
+                2020-07-02 :: USING MULTIPLE DYNAMIC CACHES WITH SPRING</h4>
+            <a target="_blank" href="https://techblog.bozho.net/using-multiple-dynamic-caches-with-spring/">
+                https://techblog.bozho.net/using-multiple-dynamic-caches-with-spring/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-06-16"><a href="#2020-06-16" style="text-decoration: none;">&#x1F516;</a>
+                2020-06-16 :: Distributed Cache with Hazelcast and Spring</h4>
+            <a target="_blank" href="https://reflectoring.io/spring-boot-hazelcast/">
+                https://reflectoring.io/spring-boot-hazelcast/</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://reflectoring.io/images/posts/hazelcast/near-cache_hu8e65deda1333fab18660471d9617cbd5_1135288_1351x0_resize_box_3.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-05-09"><a href="#2020-05-09" style="text-decoration: none;">&#x1F516;</a>
+                2020-05-09 :: JDBC - a short guide</h4>
+            <a target="_blank" href="https://www.marcobehler.com/guides/jdbc">
+                https://www.marcobehler.com/guides/jdbc</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-05-08"><a href="#2020-05-08" style="text-decoration: none;">&#x1F516;</a>
+                2020-05-08 :: Managing Transactions with Spring and Spring Data JPA</h4>
+            <a target="_blank" href="https://thorben-janssen.com/transactions-spring-data-jpa/">
+                https://thorben-janssen.com/transactions-spring-data-jpa/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-04-14"><a href="#2020-04-14" style="text-decoration: none;">&#x1F516;</a>
+                2020-04-14 :: The System Design Primer</h4>
+            <a target="_blank" href="https://github.com/donnemartin/system-design-primer">
+                https://github.com/donnemartin/system-design-primer</a>
+            <div>&nbsp;</div>
+            <img width="500"
+                src="https://raw.githubusercontent.com/donnemartin/system-design-primer/master/images/jj3A5N8.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-04-13"><a href="#2020-04-13" style="text-decoration: none;">&#x1F516;</a>
+                2020-04-13 :: Top 5 Skills and Topics to Crack Tech Coding Interviews in 2022 [UPDATED]</h4>
+            <a target="_blank"
+                href="https://javarevisited.blogspot.com/2020/04/5-essential-skills-to-crack-coding-interviews.html">
+                https://javarevisited.blogspot.com/2020/04/5-essential-skills-to-crack-coding-interviews.html</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-04-09"><a href="#2020-04-09" style="text-decoration: none;">&#x1F516;</a>
+                2020-04-09 :: AM I A REAL EXPERT?</h4>
+            <a target="_blank" href="https://techblog.bozho.net/am-i-a-real-expert/">
+                https://techblog.bozho.net/am-i-a-real-expert/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-03-31"><a href="#2020-03-31" style="text-decoration: none;">&#x1F516;</a>
+                2020-03-31 :: RESTful API Designing guidelines — The best practices</h4>
+            <a target="_blank"
+                href="https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9">
+                https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-03-18"><a href="#2020-03-18" style="text-decoration: none;">&#x1F516;</a>
+                2020-03-18 :: Optical Character Recognition with Tesseract (Tess4J)</h4>
+            <a target="_blank" href="https://www.baeldung.com/java-ocr-tesseract">
+                https://www.baeldung.com/java-ocr-tesseract</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-02-26"><a href="#2020-02-26" style="text-decoration: none;">&#x1F516;</a>
+                2020-02-26 :: Top 50 Java Programs from Coding Interviews</h4>
+            <a target="_blank"
+                href="https://javarevisited.blogspot.com/2017/07/top-50-java-programs-from-coding-Interviews.html">
+                https://javarevisited.blogspot.com/2017/07/top-50-java-programs-from-coding-Interviews.html</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2020-02-04"><a href="#2020-02-04" style="text-decoration: none;">&#x1F516;</a>
+                2020-02-04 :: Karate - Test Automation Made Simple.</h4>
+            <a target="_blank" href="https://github.com/karatelabs/karate">
+                https://github.com/karatelabs/karate</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-10-18"><a href="#2019-10-18" style="text-decoration: none;">&#x1F516;</a>
+                2019-10-18 :: Add Real-time to your Java App with Azure SignalR Service</h4>
+            <a target="_blank"
+                href="https://dev.to/azure/add-real-time-to-your-java-app-with-azure-signalr-service-3p8">
+                https://dev.to/azure/add-real-time-to-your-java-app-with-azure-signalr-service-3p8</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-10-14"><a href="#2019-10-14" style="text-decoration: none;">&#x1F516;</a>
+                2019-10-14 :: Logging levels: the wrong abstraction | IG Labs</h4>
+            <a target="_blank" href="https://labs.ig.com/logging-level-wrong-abstraction">
+                https://labs.ig.com/logging-level-wrong-abstraction</a>
+            <div>&nbsp;</div>
+            <dl>
+                <dt>DEBUG</dt>
+                <dd>&nbsp;&nbsp;- information that is useful during development. Usually very chatty, and will not
+                    show in production. </dd>
+                <dt>INFO</dt>
+                <dd>&nbsp;&nbsp;- information you will need to analyze production issues.</dd>
+                <dt>WARN</dt>
+                <dd>&nbsp;&nbsp;- someone in the team will have to investigate what happened, but it can wait until
+                    tomorrow.</dd>
+                <dt>ERROR</dt>
+                <dd>&nbsp;&nbsp;- Oh-oh, call the fireman! This needs to be investigated now!</dd>
+            </dl>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-09-23"><a href="#2019-09-23" style="text-decoration: none;">&#x1F516;</a>
+                2019-09-23 :: Twelve-Factor Methodology in a Spring Boot Microservice</h4>
+            <a target="_blank" href="https://www.baeldung.com/spring-boot-12-factor">
+                https://www.baeldung.com/spring-boot-12-factor</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-08-20"><a href="#2019-08-20" style="text-decoration: none;">&#x1F516;</a>
+                2019-08-20 :: Micrometer: Spring Boot 2's new application metrics collector</h4>
+            <a target="_blank"
+                href="https://spring.io/blog/2018/03/16/micrometer-spring-boot-2-s-new-application-metrics-collector#the-distinction-between-metrics-and-tracing">
+                https://spring.io/blog/2018/03/16/micrometer-spring-boot-2-s-new-application-metrics-collector#the-distinction-between-metrics-and-tracing</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-07-03"><a href="#2019-07-03" style="text-decoration: none;">&#x1F516;</a>
+                2019-07-03 :: Anti-Patterns and Code Smells</h4>
+            <a target="_blank" href="https://itnext.io/anti-patterns-and-code-smells-46ba1bbdef6d">
+                https://itnext.io/anti-patterns-and-code-smells-46ba1bbdef6d</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-05-20"><a href="#2019-05-20" style="text-decoration: none;">&#x1F516;</a>
+                2019-05-20 :: Difference Between a Java Keystore and a Truststore</h4>
+            <a target="_blank" href="https://www.baeldung.com/java-keystore-truststore-difference">
+                https://www.baeldung.com/java-keystore-truststore-difference</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-04-29"><a href="#2019-04-29" style="text-decoration: none;">&#x1F516;</a>
+                2019-04-29 :: Which Log Level to use When !!!</h4>
+            <div>&nbsp;</div>
+            <dl>
+                <dt>FATAL</dt>
+                <dd>&nbsp;&nbsp;- should be reserved for errors that cause the application to crash or fail to start
+                    (ex: JVM out of memory) </dd>
+                <dt>ERROR</dt>
+                <dd>&nbsp;&nbsp;- should contain technical issues that need to be resolved for proper functioning of
+                    the system (ex: couldn’t connect to database)</dd>
+                <dt>WARN</dt>
+                <dd>&nbsp;&nbsp;- is best used for temporary problems or unexpected behavior that does not
+                    significantly hamper the
+                    functioning of the application (ex: failed user login)</dd>
+                <dt>INFO</dt>
+                <dd>&nbsp;&nbsp;- should contain messages that describe what is happening in the application (ex:
+                    user registered, order placed)</dd>
+                <dt>DEBUG</dt>
+                <dd>&nbsp;&nbsp;- is intended for messages that could be useful in debugging an issue (ex: method
+                    execution started) </dd>
+                <dt>TRACE</dt>
+                <dd>&nbsp;&nbsp;- is similar to DEBUG but contains more detailed events (ex: data model updated) </dd>
+            </dl>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-04-03"><a href="#2019-04-03" style="text-decoration: none;">&#x1F516;</a>
+                2019-04-03 :: Software Project Review Checklist</h4>
+            <a target="_blank" href="https://www.yegor256.com/2019/04/02/software-project-review-checklist.html">
+                https://www.yegor256.com/2019/04/02/software-project-review-checklist.html</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-04-02"><a href="#2019-04-02" style="text-decoration: none;">&#x1F516;</a>
+                2019-04-02 :: Focus on Integration Tests Instead of Mock-Based Tests</h4>
+            <a target="_blank" href="https://phauer.com/2019/focus-integration-tests-mock-based-tests/">
+                https://phauer.com/2019/focus-integration-tests-mock-based-tests/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-02-19"><a href="#2019-02-19" style="text-decoration: none;">&#x1F516;</a>
+                2019-02-19 :: SEI CERT Oracle Coding Standard for Java</h4>
+            <a target="_blank"
+                href="https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java">
+                https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-01-29"><a href="#2019-01-29" style="text-decoration: none;">&#x1F516;</a>
+                2019-01-29 :: Introducing Jib — build Java Docker images better</h4>
+            <a target="_blank"
+                href="https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html">
+                https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-01-18"><a href="#2019-01-18" style="text-decoration: none;">&#x1F516;</a>
+                2019-01-18 :: OWASP Top Ten related Cheat Sheets</h4>
+            <a target="_blank"
+                href="https://cheatsheetseries.owasp.org/IndexTopTen.html">https://cheatsheetseries.owasp.org/IndexTopTen.html</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2019-01-17"><a href="#2019-01-17" style="text-decoration: none;">&#x1F516;</a>
+                2019-01-17 :: Top 10 Web Application Security Risks</h4>
+            <a target="_blank" href="https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</a>
+            <div>&nbsp;</div>
+            <img width="500" src="https://owasp.org/www-project-top-ten/assets/images/mapping.png">
+            <hr>
+        </div>
+        <div>
+            <h4 id="2018-05-04"><a href="#2018-05-04" style="text-decoration: none;">&#x1F516;</a>
+                2018-05-04 :: The State of Java in 2018</h4>
+            <a target="_blank" href="https://www.baeldung.com/java-in-2018">https://www.baeldung.com/java-in-2018</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2018-04-19"><a href="#2018-04-19" style="text-decoration: none;">&#x1F516;</a>
+                2018-04-19 :: Spring checkstyle formatting</h4>
+            <a target="_blank"
+                href="https://github.com/spring-io/spring-javaformat/blob/main/src/checkstyle/checkstyle.xml">
+                https://github.com/spring-io/spring-javaformat/blob/main/src/checkstyle/checkstyle.xml</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
+        <div>
+            <h4 id="2018-03-26"><a href="#2018-03-26" style="text-decoration: none;">&#x1F516;</a>
+                2018-03-26 :: Java VM Options You Should Always Use in Production</h4>
+            <a target="_blank" href="https://blog.sokolenko.me/2014/11/javavm-options-production.html">
+                https://blog.sokolenko.me/2014/11/javavm-options-production.html</a>
+            <a target="_blank" href="https://jvmmemory.com/">https://jvmmemory.com/</a>
+            <div>&nbsp;</div>
+            <hr>
+        </div>
     </div>
-  </nav>
-
-  <div class="container">
-    <div ng-view></div>
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted"> &copy; 2018 <a href="mailto:info@merite.pk">merite.pk</a> All rights reserved.</p>
-    </div>
-  </footer>
 </body>
-<script src="lib/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-<script src="lib/bootstrap/3.3.7-1/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="lib/material-kit/1.1.0/assets/js/material.min.js"></script>
-<script src="lib/material-kit/1.1.0/assets/js/nouislider.min.js" type="text/javascript"></script>
-<script src="lib/material-kit/1.1.0/assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
-<script src="lib/material-kit/1.1.0/assets/js/material-kit.js" type="text/javascript"></script>
-<script src="lib/angularjs/1.6.9/angular.min.js"></script>
-<script src="lib/angularjs/1.6.9/angular-route.min.js"></script>
-<script src="lib/angularjs/1.6.9/angular-resource.min.js"></script>
-<script src="app/js/index.js"></script>
+
 </html>
